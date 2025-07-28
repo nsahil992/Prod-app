@@ -1,0 +1,14 @@
+prod:
+  replicas: 1
+  image: nsahil992/prod:v1
+  port: 80
+  targetPort: 8080
+  nodePort: 30127
+
+postgres:
+  replicas: 1
+  image: postgres:16
+  pvc:
+    storage: 1Gi
+    storageClassName: manual
+    path: /Users/Sahil/Desktop/Prod-app/prod-data

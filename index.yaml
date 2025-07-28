@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  Prod-app:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-07-28T08:06:33.238331+05:30"
+    description: A Helm Chart for prod app
+    digest: ca7c9cf2c286beab73f7097e46853cd33ed8c116e95ddd718556fe052ab7ef26
+    name: Prod-app
+    type: application
+    urls:
+    - Prod-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-07-28T08:06:33.099265+05:30"

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: prod-pv
+spec:
+  capacity:
+    storage: {{ .Values.postgres.pvc.storage }}
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: {{ .Values.postgres.pvc.storageClassName }}
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: {{ .Values.postgres.pvc.path }}
